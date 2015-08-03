@@ -11,6 +11,6 @@ mysql_query('CREATE TABLE IF NOT EXISTS `chat` (
   `login` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `data` bigint(11) unsigned NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL
-) ENGIN');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;');
 
 

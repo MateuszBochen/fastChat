@@ -25,6 +25,18 @@ echo '<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <title>Title of the document</title>
+    
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<script>
+
+$(function(){
+    $(document).scrollTop($(document).height());
+});
+
+</script>
+
 </head>
 
 <body>';
