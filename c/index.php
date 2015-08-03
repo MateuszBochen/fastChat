@@ -9,7 +9,7 @@ if (@$_POST['login'] && @$_POST['content']) {
 
     $time = time();
     $login = $_POST['login'];
-    $content = $_POST['content'];
+    $content = nl2br($_POST['content']);
 
     mysql_query("INSERT INTO `chat` (`login`, `data`, `content`) VALUES ('$login', '$time', '$content') ");
 }
